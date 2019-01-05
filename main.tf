@@ -90,4 +90,11 @@ resource "aws_security_group" "allow_all" {
     }
 }
 
-
+terraform {
+ backend "s3" {
+  encrypt = true
+  bucket = "sreetfstate"
+  region = "us-east-1"
+  key = "production.tfstate"
+ }
+}
