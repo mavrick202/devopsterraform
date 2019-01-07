@@ -95,6 +95,6 @@ terraform {
   encrypt = true
   bucket = "sreetfstate"
   region = "us-east-1"
-  key = "production.tfstate"
+  key = "aws.tfstate"
  }
 }
